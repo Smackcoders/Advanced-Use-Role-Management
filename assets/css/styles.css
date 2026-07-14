@@ -1,0 +1,1217 @@
+h2 {
+    font-size: 1rem;
+}
+
+body,
+.wrap {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    background-color: #f1f1f1;
+    color: #1d2327;
+}
+
+.wrap {
+    max-width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+/* Secondary dashboard tabs: segmented pill control */
+.advausro-segmented-tabs {
+    display: inline-flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 8px;
+    margin: 0 0 20px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    max-width: 100%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.advausro-segmented-tab {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #475569;
+    text-decoration: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    box-shadow: none;
+    outline: none;
+    line-height: 1.4;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    transition: color 0.2s ease, background 0.2s ease, font-weight 0.2s ease;
+}
+
+.advausro-segmented-tab:hover {
+    color: #0f172a;
+    background: #f1f5f9;
+}
+
+.advausro-segmented-tab.nav-tab-active {
+    background: var(--advausro-primary, #5a4af4) !important;
+    color: #ffffff !important;
+    font-weight: 600;
+    border-radius: 8px !important;
+    border: none !important;
+    box-shadow: 0 4px 12px rgba(90, 74, 244, 0.2) !important;
+}
+
+.advausro-segmented-tab:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px var(--advausro-primary, #5a4af4);
+}
+
+.advausro-segmented-tab.nav-tab-active:focus-visible {
+    box-shadow: 0 4px 12px rgba(90, 74, 244, 0.2), 0 0 0 2px #ffffff, 0 0 0 4px var(--advausro-primary, #5a4af4) !important;
+}
+
+.crm-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    /* background: #f9fafb; */
+    border: none;
+    border-radius: 12px;
+    box-shadow: none;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.crm-layout {
+    margin-top: 10px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.crm-layout-inner {
+    display: flex;
+    min-height: 100%;
+}
+
+.crm_overall_layout {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: stretch;
+}
+
+/* Removed .crm_left_side_column and .crm_right_side_column structure */
+
+.crm-role-layout {
+    max-width: 100%;
+}
+
+
+
+.crm-sidebar {
+    flex: 0 0 240px;
+    background: transparent;
+    padding: 24px 16px;
+    border-right: 1px solid #e5e7eb;
+}
+
+.crm-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cap-tab {
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #4b5563;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.cap-tab:hover {
+    background: #f3f4f6;
+    color: #111827;
+}
+
+.cap-tab.active {
+    background: #eff6ff;
+    color: #2563eb;
+    font-weight: 600;
+}
+
+
+.crm-main {
+    flex: 1;
+    padding: 24px;
+    background: transparent;
+    max-width: 100%;
+    position: relative;
+}
+
+.crm-sidebar-header {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e5e7eb;
+    margin: -24px -16px 24px -16px;
+    padding: 0 16px;
+}
+
+.crm-main-header {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5e7eb;
+    margin: -24px -24px 24px -24px;
+    padding: 0 24px;
+}
+
+.filter-by-text {
+    font-size: 11px;
+    font-weight: 700;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.crm-main-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.crm-main-title strong {
+    font-size: 16px;
+    color: #1f2937;
+    font-weight: 600;
+}
+
+.cap-count.badge {
+    background: #f1f5f9;
+    color: #64748b;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.crm-capabilities {
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+
+.cap-section {
+    margin-bottom: 40px;
+}
+
+.crm-capabilities h3,
+.cap-section h3 {
+    margin-bottom: 24px !important;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-top: 0;
+}
+
+.cap-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px 24px;
+    max-height: none;
+    padding-right: 10px;
+}
+
+.cap-item {
+    padding: 8px 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.cap-item label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 0.875rem;
+    color: #4b5563;
+}
+
+.cap-item input[type="checkbox"] {
+    margin-right: 12px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+
+#add-role-form {
+    margin-top: 5px;
+}
+
+.crm-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    width: 100%;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.label_input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+label {
+    vertical-align: middle;
+}
+
+.label_input label {
+    font-weight: 500;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #374151;
+}
+
+.crm-box {
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    position: relative;
+    display: flex;
+    line-height: 1.5rem;
+    flex-direction: column;
+    min-height: 260px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.crm-box:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.crm-box h2,
+.crm-box h3 {
+    font-size: 1.125rem;
+    margin: 0 0 16px 0;
+    font-weight: 600;
+    color: #111827;
+}
+
+/* Fixed heights for lists and consistent box height */
+#delete-capabilities-list,
+#delete-roles-list {
+    margin: 10px 0;
+    padding: 0;
+    list-style: none;
+    max-height: 150px;
+    overflow-y: auto;
+    border: 1px solid #f0f0f1;
+    padding: 5px;
+}
+
+
+
+input[type="text"],
+.crm-role-selector,
+.crm-search {
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background: #ffffff;
+    font-size: 14px;
+    width: 100% !important;
+    height: 42px;
+    padding: 0 12px;
+    box-sizing: border-box;
+    transition: border-color 0.15s, box-shadow 0.15s;
+    color: #374151;
+}
+
+input[type="text"]:focus,
+.crm-role-selector:focus,
+.crm-search:focus {
+    outline: none;
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+input[type="text"].crm-oauth-input {
+    width: 40%;
+}
+
+.crm-role-selector {
+    margin-bottom: 10px;
+}
+
+.wp-core-ui select {
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    height: 42px;
+}
+
+.crm-delete-section {
+    display: none;
+    /* No longer used */
+}
+
+.delete-capablity-heading {
+    font-size: 1rem;
+}
+
+.crm-delete-capability,
+.crm-delete-role {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+}
+
+.crm-delete-option-container {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    justify-content: center;
+}
+
+.crm-btn,
+.button-primary {
+    background: #4f46e5;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    height: 42px;
+    border-radius: 8px;
+    padding: 0 16px;
+    font-weight: 600;
+    margin-top: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background-color 0.2s, transform 0.1s;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.crm-btn {
+    width: 100%;
+}
+
+/* Audit log toolbar: Filter must stay compact (full-width .crm-btn breaks the row layout) */
+#advausro-log-filter-form .crm-btn {
+    width: auto !important;
+    margin-top: 0;
+    flex-shrink: 0;
+}
+
+/* Audit log filter row: consistent control height + native select arrow gutter */
+#advausro-log-filter-form #event-type-filter.advausro-audit-event-type-select,
+#advausro-log-filter-form .advausro-audit-event-type-select {
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    height: 40px;
+    min-height: 40px;
+    min-width: 180px;
+    padding: 0 36px 0 12px;
+    font-size: 0.875rem;
+    color: #374151;
+    background-color: #fff;
+    box-sizing: border-box;
+    line-height: normal;
+    vertical-align: middle;
+}
+
+/* WP_List_Table wrapper must not clip tablenav/bulk actions (was overflow:hidden on form) */
+#advausro-log-table-form.advausro-audit-log-table-form {
+    overflow: visible;
+}
+
+#advausro-log-table-form .tablenav {
+    height: auto !important;
+    min-height: 0;
+    overflow: visible !important;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    box-sizing: border-box;
+}
+
+#advausro-log-table-form .tablenav .actions,
+#advausro-log-table-form .tablenav .bulkactions {
+    float: none !important;
+    margin: 0 !important;
+}
+
+#advausro-log-table-form .bulkactions {
+    display: inline-flex !important;
+    align-items: center !important;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 0 !important;
+    vertical-align: middle;
+}
+
+/* Same row height for Bulk actions dropdown + Apply (matches 40px filter controls) */
+#advausro-log-table-form .bulkactions select[name="action"],
+#advausro-log-table-form .bulkactions select[name="action2"] {
+    height: 40px !important;
+    min-height: 40px !important;
+    padding: 0 36px 0 12px !important;
+    line-height: normal !important;
+    border-radius: 8px;
+    box-sizing: border-box !important;
+    vertical-align: middle !important;
+    margin: 0 !important;
+}
+
+#advausro-log-table-form .bulkactions input.button.action {
+    height: 40px !important;
+    min-height: 40px !important;
+    line-height: 1 !important;
+    padding: 0 16px !important;
+    box-sizing: border-box !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 !important;
+    vertical-align: middle !important;
+}
+
+#advausro-log-table-form .tablenav .tablenav-pages {
+    float: none !important;
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+#advausro-log-table-form .tablenav.bottom {
+    overflow: visible !important;
+    clear: both;
+}
+
+/* Float-era markup: hide clear break when using flex tablenav */
+#advausro-log-table-form .tablenav br.clear {
+    display: none;
+}
+
+/* WP_List_Table item count ("X items"): hide on audit log; avoids extra row from global .tablenav.bottom .displaying-num float rules */
+#advausro-log-table-form .tablenav .displaying-num {
+    display: none !important;
+}
+
+.crm-btn-save {
+    width: auto !important;
+    min-width: 160px;
+    background: #5c5cf1 !important;
+    border-radius: 12px !important;
+    color: #fff !important;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.crm-btn-save:hover {
+    background: #4e4ee6 !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(92, 92, 241, 0.2);
+}
+
+p.submit {
+    margin-right: 70%;
+}
+
+.crm-btn:hover,
+.button-primary:hover {
+    background: #4338ca;
+    transform: translateY(-1px);
+}
+
+.crm-btn:active,
+.button-primary:active {
+    transform: translateY(0);
+}
+
+.crm-clone-role-btn {
+    background: #eef2ff;
+    color: #4f46e5;
+}
+
+.crm-clone-role-btn:hover {
+    background: #e0e7ff;
+}
+
+.crm-add-capablity-btn,
+#add-capability-btn {
+    background: #10b981;
+}
+
+.crm-add-capablity-btn:hover,
+#add-capability-btn:hover {
+    background: #059669;
+}
+
+#delete-role-btn,
+.delete-btn {
+    background: #ef4444;
+}
+
+#delete-role-btn:hover,
+.delete-btn:hover {
+    background: #dc2626;
+}
+
+.update-btn {
+    width: auto;
+    min-width: 100px;
+    margin-top: 20px;
+}
+
+.crm-button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.crm-add-capablity-btn,
+.crm-clone-role-btn,
+#add-new-role-btn,
+#delete-role-btn,
+.delete-btn {
+    margin-top: auto;
+}
+
+@media only screen and (max-width: 1230px) {
+    .crm-clone-role-btn {
+        top: 20%;
+    }
+}
+
+@media only screen and (max-width: 1286px) {
+    .update-btn {
+        left: 58%;
+    }
+}
+
+#add-new-role-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 115, 170, 0.5);
+}
+
+
+
+
+
+.tablenav .actions select,
+.tablenav .actions input[type="date"],
+.tablenav .actions .button {
+    margin-bottom: 4px;
+
+}
+
+.audit-toolbar input[type="search"] {
+    max-width: 220px;
+    padding: 4px 8px;
+}
+
+.bulkactions {
+    margin-top: 10px;
+}
+
+
+.tablenav-pages {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding-top: 12px;
+    font-size: 14px;
+    gap: 4px;
+    width: 100%;
+}
+
+.align_left {
+    place-content: top;
+}
+
+.wp-core-ui .button-primary {
+    width: 40%;
+    float: right;
+    left: 20%;
+}
+
+.tablenav-pages .page-numbers {
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 0 1px;
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.tablenav-pages .page-numbers.current {
+    background: #2271b1;
+    color: #fff;
+    font-weight: 600;
+    border-color: #1d5e91;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.tablenav-pages .page-numbers:hover {
+    background-color: #f0f0f0;
+    color: #000;
+    border-color: #bbb;
+}
+
+.expires-countdown {
+    font-size: 13px;
+    color: #666;
+    margin-top: 4px;
+}
+
+
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+
+#add-role-mail-btn {
+    font-size: 13px;
+    background-color: #0073aa;
+    color: #fff;
+}
+
+.add-role-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#add-role-mail-btn:hover {
+    background-color: #006799;
+    border-color: #006799;
+}
+
+.audit-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 8px;
+    align-items: center;
+}
+
+.left-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
+
+.search-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#help-panel {
+    position: fixed;
+    top: 32px;
+    /* offset for WP admin bar */
+    right: -100%;
+    /* hide completely offscreen */
+    width: 400px;
+    max-width: 100vw;
+    height: calc(100vh - 32px);
+    background: #fff;
+    border-left: 1px solid #ccc;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 100000;
+    transition: right 0.3s ease-in-out;
+    padding: 20px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+#help-panel.open {
+    right: 0;
+}
+
+/* Overlay */
+#help-overlay {
+    display: none;
+    position: fixed;
+    top: 32px;
+    /* offset for WP admin bar */
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 32px);
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 99999;
+}
+
+#help-overlay.active {
+    display: block;
+}
+
+/* Responsive: full width on smaller screens */
+@media (max-width: 440px) {
+    #help-panel {
+        width: 100vw;
+        right: -100vw;
+        border-left: none;
+        border-top: 1px solid #ccc;
+        bottom: 0;
+        top: auto;
+        height: 50vh;
+        max-height: 300px;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.15);
+        border-radius: 10px 10px 0 0;
+    }
+
+    #help-panel.open {
+        right: 0;
+        top: auto;
+        bottom: 0;
+    }
+}
+
+.help-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.help-header h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.help-header span {
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.help-content {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.help-content ul {
+    padding-left: 20px;
+}
+
+.help-content a {
+    color: #0073aa;
+}
+
+.help-content a:hover,
+.help-content a:focus {
+    text-decoration: underline;
+    outline: none;
+}
+
+.help-content code {
+    display: block;
+    margin-top: 5px;
+    background: #f9f9f9;
+    padding: 5px;
+    border-left: 3px solid #0073aa;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.oauth2-settings-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.advausro-timezone-modal {
+    display: none;
+}
+
+.advausro-timezone-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+.advausro-timezone-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    max-width: 500px;
+    width: 90%;
+    font-family: Arial, sans-serif;
+}
+
+.advausro-timezone-content h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.advausro-timezone-content p {
+    color: #555;
+    line-height: 1.5;
+}
+
+.advausro-timezone-field {
+    margin-bottom: 15px;
+}
+
+.advausro-timezone-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.advausro-timezone-field select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.advausro-timezone-buttons {
+    text-align: right;
+}
+
+.advausro-timezone-buttons .button {
+    margin-right: 10px;
+}
+
+.advausro-timezone-buttons .button:last-child {
+    margin-right: 0;
+}
+
+.crm-button-wrapper {
+    margin-top: 20px;
+}
+
+.oauth2-login-button-wrapper {
+    padding: 8px 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+
+.tablenav .actions {
+    overflow: visible;
+}
+
+.tablenav .actions select,
+.tablenav .actions input[type="date"] {
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 782px) {
+    .tablenav .actions {
+        margin-bottom: 10px;
+    }
+
+    .tablenav .actions select,
+    .tablenav .actions input[type="date"] {
+        margin-bottom: 5px;
+        display: block;
+        width: 100%;
+    }
+}
+
+#advausro-log-search-input {
+    width: 200px;
+}
+
+/* Ensure pagination aligns like WP_List_Table */
+.tablenav.bottom .tablenav-pages {
+    float: right;
+    margin: 10px 0;
+}
+
+.tablenav.bottom .displaying-num {
+    float: left;
+    margin: 10px 0;
+}
+
+.tablenav.bottom {
+    clear: both;
+    overflow: hidden;
+}
+
+/* Ensure table matches WordPress admin styling */
+table.wp-list-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+/* Style table headers and rows */
+table.wp-list-table th,
+table.wp-list-table td {
+    padding: 8px 10px;
+    vertical-align: middle;
+}
+
+/* Audit log list table: match header alignment to cell content (ref: left ID/action/user/message, right date) */
+#advausro-log-table-container .wp-list-table thead th.column-id,
+#advausro-log-table-container .wp-list-table tbody td.column-id {
+    text-align: left;
+}
+
+#advausro-log-table-container .wp-list-table thead th.column-action,
+#advausro-log-table-container .wp-list-table tbody td.column-action {
+    text-align: left;
+}
+
+#advausro-log-table-container .wp-list-table thead th.column-user_id,
+#advausro-log-table-container .wp-list-table tbody td.column-user_id {
+    text-align: left;
+}
+
+#advausro-log-table-container .wp-list-table thead th.column-log_message,
+#advausro-log-table-container .wp-list-table tbody td.column-log_message {
+    text-align: left;
+}
+
+#advausro-log-table-container .wp-list-table thead th.column-created_at,
+#advausro-log-table-container .wp-list-table tbody td.column-created_at {
+    text-align: right;
+}
+
+/* Sortable links share row space with indicators — keep labels flush like body cells */
+#advausro-log-table-container .wp-list-table thead th.column-id.sortable a,
+#advausro-log-table-container .wp-list-table thead th.column-id.sorted a,
+#advausro-log-table-container .wp-list-table thead th.column-action.sortable a,
+#advausro-log-table-container .wp-list-table thead th.column-action.sorted a,
+#advausro-log-table-container .wp-list-table thead th.column-user_id.sortable a,
+#advausro-log-table-container .wp-list-table thead th.column-user_id.sorted a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 6px;
+}
+
+#advausro-log-table-container .wp-list-table thead th.column-created_at.sortable a,
+#advausro-log-table-container .wp-list-table thead th.column-created_at.sorted a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 6px;
+}
+
+#advausro-log-table-container .wp-list-table thead th.column-log_message {
+    text-align: left;
+}
+
+/* Checkbox column alignment fix */
+table.wp-list-table th.check-column,
+table.wp-list-table td.check-column {
+    width: 2.2em !important;
+    padding: 0 !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+
+table.wp-list-table th.check-column input[type="checkbox"],
+table.wp-list-table td.check-column input[type="checkbox"] {
+    display: block !important;
+    margin: 0 auto !important;
+    vertical-align: middle !important;
+    position: relative !important;
+    top: 0 !important;
+    float: none !important;
+}
+
+/* Style action badges */
+.advausro-action-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 12px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: normal;
+    text-transform: capitalize;
+    border: 1px solid transparent;
+}
+
+/* Green (Login, Add Role, Clone Role) */
+.advausro-action-add_role,
+.advausro-action-clone_role,
+.advausro-action-login {
+    background-color: #ecfdf5;
+    border-color: #a7f3d0;
+    color: #059669;
+}
+
+/* Red (Delete User, Delete Role, Remove Temp Role) */
+.advausro-action-delete_role,
+.advausro-action-remove_temp_role,
+.advausro-action-delete_user {
+    background-color: #fef2f2;
+    border-color: #fecaca;
+    color: #dc2626;
+}
+
+/* Blue (Update Capabilities, Add Capability, Assign Temp Role) */
+.advausro-action-add_capability,
+.advausro-action-assign_temp_role,
+.advausro-action-update_capabilities {
+    background-color: #eff6ff;
+    border-color: #bfdbfe;
+    color: #2563eb;
+}
+
+/* Yellow / Orange (Settings Change, Delete Capability) */
+.advausro-action-delete_capability,
+.advausro-action-settings_change {
+    background-color: #fffbeb;
+    border-color: #fde68a;
+    color: #d97706;
+}
+
+/* Ensure pagination aligns with WordPress admin style */
+.tablenav.top {
+    margin-bottom: 20px;
+}
+
+.tablenav.bottom {
+    margin-top: 20px;
+}
+
+.tablenav .tablenav-pages {
+    float: right;
+}
+
+.tablenav .actions {
+    float: left;
+    margin-right: 20px;
+    overflow: visible;
+}
+
+/* Style filter inputs */
+#event-type-filter,
+#start-date-filter,
+#end-date-filter {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Ensure search box aligns to the right */
+#advausro-log-search-search-input {
+    width: 200px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 782px) {
+    .tablenav .tablenav-pages {
+        float: none;
+        text-align: center;
+    }
+
+    .tablenav .actions {
+        float: none;
+        margin-bottom: 10px;
+    }
+
+    #event-type-filter,
+    #start-date-filter,
+    #end-date-filter {
+        display: block;
+        margin: 5px 0;
+        width: 100%;
+        max-width: 200px;
+    }
+}
+/* Standardize WP List Table Apply Button */
+.wp-core-ui .advausro-audit-log-table-form .tablenav .button.action,
+.wp-core-ui #advausro-user-role-management-form .tablenav .button.action,
+.advausro-audit-log-table-form .tablenav input[type="submit"].button.action,
+#advausro-user-role-management-form .tablenav input[type="submit"].button.action {
+    height: 40px !important;
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 6px !important;
+    margin: 0 !important;
+    border: none !important;
+    border-radius: 8px !important;
+    background: #6366f1 !important;
+    color: #fff !important;
+    font-size: 0.875rem !important;
+    font-weight: 500 !important;
+    font-family: 'Inter', sans-serif !important;
+    padding: 0 16px !important;
+    cursor: pointer !important;
+    transition: background 0.15s ease !important;
+    vertical-align: middle !important;
+}
+
+.wp-core-ui .advausro-audit-log-table-form .tablenav .button.action:hover,
+.wp-core-ui #advausro-user-role-management-form .tablenav .button.action:hover,
+.advausro-audit-log-table-form .tablenav input[type="submit"].button.action:hover,
+#advausro-user-role-management-form .tablenav input[type="submit"].button.action:hover {
+    background: #4f46e5 !important;
+    color: #fff !important;
+}
+
+/* Also ensure the bulk action select matches the height and style */
+.advausro-audit-log-table-form .tablenav select[name="action"],
+.advausro-audit-log-table-form .tablenav select[name="action2"],
+#advausro-user-role-management-form .tablenav select[name="bulk_action_top"],
+#advausro-user-role-management-form .tablenav select[name="bulk_action_bottom"],
+.advausro-audit-filter-row select[name="event_type"] {
+    height: 40px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background: #ffffff;
+    font-size: 0.875rem;
+    color: #374151;
+    padding: 0 32px 0 12px;
+    vertical-align: middle;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%236b7280" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpolyline points="6 9 12 15 18 9"%3E%3C/polyline%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
